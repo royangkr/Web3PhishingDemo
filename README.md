@@ -1,5 +1,5 @@
 #  Signature-phishing PBM transfer demo
-
+![Demo phishing site](https://raw.githubusercontent.com/royangkr/Web3PhishingDemo/main/transferPBMdemo.PNG "Demo phishing site")
 ## Installation
 To use this dApp, you'll need to do the following:
 
@@ -12,13 +12,14 @@ npm install
 ```sh
 npm install
 ```
-open the dApp in your browswer at http://localhost:3000/.
+open the dApp in your browser at http://localhost:3000/.
 
 ## Scam configuration
 In `interact.js`, 
 - set `PBMcontractAddress` to the ERC20 PBM token contract address to be transfered
 - set `NFTcontractAddress` to the ERC1155 NFT contract address to be stolen
 - set `NFTtokenID` to the ERC1155 NFT tokenID to be stolen
+
 Configure what the dApp will do in `interact.js` by setting `action` and `thief` in lines 22-23. The StealOptions are explanined below:
 - honestTransfer: transfers PBM tokens as user intended
 - stealPBM: drains users PBM balance to thief wallet
