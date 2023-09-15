@@ -1,4 +1,5 @@
 #  Signature-phishing PBM transfer demo
+Demo phishing site that is supposed to transfer PBM tokens from one wallet to another but can be configured to steal wallet contents.
 ![Demo phishing site](https://raw.githubusercontent.com/royangkr/Web3PhishingDemo/main/transferPBMdemo.PNG "Demo phishing site")
 ## Installation
 To use this dApp, you'll need to do the following:
@@ -20,13 +21,13 @@ In `interact.js`,
 - set `NFTcontractAddress` to the ERC1155 NFT contract address to be stolen
 - set `NFTtokenID` to the ERC1155 NFT tokenID to be stolen
 
-Configure what the dApp will do in `interact.js` by setting `action` and `thief` in lines 22-23. The StealOptions are explanined below:
+Configure `action` and `thief` in `interact.js` by setting  lines 22-23. The StealOptions are:
 - honestTransfer: transfers PBM tokens as user intended
-- stealPBM: drains users PBM balance to thief wallet
-- stealPBMbyApprove: grant thief approval of user's PBM
-- stealMatic: steal users MATIC
-- stealNFT: steal users NFT
-- stealNFTbyApprove: grant thief approval of user's NFTs
+- stealPBM: drains user's PBM balance to thief wallet
+- stealPBMbyApprove: grant thief approval to transfer user's PBM
+- stealMatic: steal user's MATIC
+- stealNFT: steal user's NFT
+- stealNFTbyApprove: grant thief approval to transfer user's NFTs
 
 ### References
 https://github.com/alchemyplatform/hello-world-part-four-tutorial
