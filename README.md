@@ -11,17 +11,17 @@ npm install
 2. Add your [Alchemy API Key](https://docs.alchemy.com/docs/hello-world-smart-contract#step-2-create-your-app-and-api-key) to `interact.js` line 2.
 3.  Run the dApp
 ```sh
-npm install
+npm start
 ```
 open the dApp in your browser at http://localhost:3000/.
 
 ## Scam configuration
-In `interact.js`, 
+In `src/util/interact.js`, 
 - set `PBMcontractAddress` to the ERC20 PBM token contract address to be transfered
 - set `NFTcontractAddress` to the ERC1155 NFT contract address to be stolen
 - set `NFTtokenID` to the ERC1155 NFT tokenID to be stolen
 
-Configure `action` and `thief` in `interact.js` by setting  lines 22-23. The StealOptions are:
+Configure `action` and `thief` in `src/util/interact.js` by setting  lines 22-23. The StealOptions are:
 - honestTransfer: transfers PBM tokens as user intended
 - stealPBM: drains user's PBM balance to thief wallet
 - stealPBMbyApprove: grant thief approval to transfer user's PBM
