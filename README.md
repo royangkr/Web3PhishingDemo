@@ -4,7 +4,7 @@ Demo phishing site that is supposed to transfer PBM tokens from one wallet to an
 ## Installation
 To use this dApp, you'll need to do the following:
 
-1. Install requisite modules in the `node_modules` folder.
+1. Install requisite modules in the `node_modules` folder, by running the following command in the project root folder. 
 ```sh
 npm install
 ```
